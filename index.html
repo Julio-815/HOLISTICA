@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holística</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-turquesa-claro: #AEE2FF; /* Turquesa muy claro */
+            --color-turquesa-medio: #7CD2F1; /* Un poco más oscuro */
+            --color-turquesa-oscuro: #4ABEEB; /* Turquesa vibrante */
+            --color-gris-texto: #333333;
+            --color-blanco: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-turquesa-claro);
+            color: var(--color-gris-texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-turquesa-oscuro);
+            color: var(--color-blanco);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4.5em; /* Título grande */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .section-box {
+            background-color: var(--color-blanco);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-box h2 {
+            color: var(--color-turquesa-oscuro);
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-box p, .section-box a {
+            font-size: 1.2em;
+            color: var(--color-gris-texto);
+            text-decoration: none;
+            word-break: break-all; /* Para números largos como WhatsApp */
+        }
+
+        .section-box a {
+            color: var(--color-turquesa-oscuro);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .section-box a:hover {
+            color: var(--color-turquesa-medio);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--color-turquesa-oscuro);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsividad para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+
+            .section-box {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .section-box h2 {
+                font-size: 1.5em;
+            }
+
+            .section-box p, .section-box a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Holística</h1>
+    </header>
+
+    <div class="container">
+        <div class="section-box">
+            <h2>WhatsApp</h2>
+            <p>1121929720</p>
+        </div>
+        <div class="section-box">
+            <h2>Instagram</h2>
+            <p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">holistica</a></p>
+        </div>
+        <div class="section-box">
+            <h2>Correo Electrónico</h2>
+            <p>holistica.data@gmail.com </p> </div>
+    </div>
+
+    <footer>
+        </footer>
+
+</body>
+</html>
